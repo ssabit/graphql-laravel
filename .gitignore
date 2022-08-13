@@ -13,3 +13,5 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+programmatic-types.graphql
+_lighthouse_ide_helper.php
