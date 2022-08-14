@@ -1,0 +1,28 @@
+mutation UserLogin{
+  login(
+    email:"sabit@gmail.com",
+    password:"12345678",
+    device:"web"
+  )
+}
+
+{
+  me{
+    name,
+    email
+  }
+}
+
+{
+  user(id:1){
+    name,
+    email,
+    id,
+    image
+  }
+}
+
+mutation FileUpload($file:Upload!){
+  updateUserAvatar(image:$file,id:1 )
+  {name,image}
+}
