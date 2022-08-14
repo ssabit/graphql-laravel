@@ -17,7 +17,7 @@ final class Login
 
         if (! $user || ! Hash::check($args['password'], $user->password)) {
             throw ValidationException::withMessages([
-                'email' => ['Invalid email address'],
+                'email' => ['Invalid credential address'],
             ]);
         }
 
