@@ -4,7 +4,7 @@ namespace App\GraphQL\Mutations;
 
 use App\Models\User;
 
-final class UpdateUserAvatar
+final class updateUserAvatar
 {
     /**
      * @param  null  $_
@@ -15,7 +15,7 @@ final class UpdateUserAvatar
         $file = $args['image'];
         $path =  $file->storePublicly('public/uploads');
         $user = User::find($args['id']);
-        $user->update(['avatar' => $path]);
+        $user->update(['image' => $path]);
         return $user;
     }
 }

@@ -31,5 +31,5 @@ type User {
     email: String
     email_verified_at: String
     posts: [Post]! @hasMany
-    avatar: String
+    image: String
 }
